@@ -1,0 +1,83 @@
+{
+  "languageserver": {
+    "tailwindcss": {
+      "command": "tailwindcss-language-server",
+      "args": [
+        "--stdio"
+      ],
+      "filetypes": [
+        "html",
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "vue"
+      ],
+      "initializationOptions": {
+        "userLanguages": {
+          "html": "html"
+        }
+      },
+      "settings": {
+        "tailwindCSS": {
+          "validate": true,
+          "lint": {
+            "cssConflict": "warning",
+            "invalidApply": "error",
+            "invalidScreen": "error",
+            "invalidVariant": "error",
+            "recommendedVariantOrder": "warning"
+          },
+          "experimental": {
+            "classRegex": [
+              "class\\s*=\\s*\"([^\"]*)",
+              "className\\s*=\\s*\"([^\"]*)",
+              "tw\\(.*?`([^`]*)"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "suggest.completionItemKindLabels": {
+    "function": " func",
+    "method": " method",
+    "variable": " var",
+    "class": " class",
+    "interface": " iface",
+    "module": " mod",
+    "property": " prop",
+    "field": " field",
+    "constructor": " ctor",
+    "enum": " enum",
+    "enumMember": " member",
+    "typeParameter": " type",
+    "file": "󰈔 file",
+    "folder": " folder",
+    "constant": " const",
+    "struct": " struct",
+    "snippet": " snippet",
+    "text": " text",
+    "keyword": " kw",
+    "color": " color",
+    "reference": " ref",
+    "event": " event",
+    "operator": " op"
+  },
+  "emmet.includeLanguages": {
+    "html": "html",
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
+  "prettier.enable": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "coc.preferences.formatOnSave": true,
+  "suggest.autoTrigger": "always",
+  "suggest.noselect": false,
+  "snippets.ultisnips.pythonPrompt": false
+}
